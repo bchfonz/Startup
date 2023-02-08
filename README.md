@@ -1,8 +1,10 @@
 # Startup
 Ben: I've learned more about merging conlficts which is really helpful. I also didn't I could fork a repository which seems really helpful. I found the DadJokesAPI very interesting haha
 
-Tags like <div> and <header> aren't always neccessary but they help keep everything organized
-HTML can nest some of the things I've been learning about. For example you can use an <svg> as a <button>
+Things I learned from the simon HTML:
+Tags like div and header aren't always neccessary but they help keep everything organized
+HTML can nest some of the things I've been learning about. For example you can use an svg as a button
+br and hr can be used to style the website a little bit
 
 
 Carson: Something I learned was more about github in general. I've never used it before extensively and it looks like in this class we will, and I know that we will need to use it in the future in jobs and what not. Just learning how to navigate the site and how everything works was very interesting. 
