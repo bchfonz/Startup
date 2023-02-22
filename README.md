@@ -13,9 +13,9 @@ Things I learned from the simon HTML:
 More about tables in html. The table in scores.html used <.table>, <.thead>, <.tbody>, <.tr>, <.th>, and <.td>. That's a lot of tags for one element, but I guess I'll have this assignment to reference if I have trouble in the future. Also, I haven't used vscode much in the past, so learning better how to clone, push, and commit with git was good. 
 
 Things I learned from the simon CSS:
-I was going through copy+pasting code from the css project into my html one, and css really isn't all that much extra code. It doesn't really add any extra lines besides <.div> stuff, and just lengthens html ones. The biggest difference I saw was in the <.header> stuff. It didn't make a huge difference in result, but it definitely polished up some rough edges and made the website feel more legit. 
+I was going through copy+pasting code from the css project into my html one, and css really isn't all that much extra code. It doesn't really add any extra lines besides <.div> stuff, and just lengthens html ones. The biggest difference I saw was in the <.header> stuff. It didn't make a huge difference in result, like it works pretty much the same, but it definitely polished up some rough edges and made the website feel more legit and professional. 
 
-
+<br><br>
 
 
 Elevator pitch:
