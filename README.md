@@ -16,6 +16,8 @@ Things I learned from the simon CSS:
 I was going through copy+pasting code from the css project into my html one, and css really isn't all that much extra code. It doesn't really add any extra lines besides <.div> stuff, and just lengthens html ones. The biggest difference I saw was in the <.header> stuff. It didn't make a huge difference in result, but it definitely polished up some rough edges and made the website feel more legit. 
 
 
+
+
 Elevator pitch:
 You love to play soccer. But finding places and people to play with can be so hard. With my website, you will be able to find and schedule times and places to play pickup soccer. All you have to do is enter in your zip code or city and a calender will pop up and show you where and when pickup games are happening and it will show you how many people are planning on going to play. And if you want to get a group together to play you can creat your own event that others near by will be able to see. Now you will have no problem being able to play the game you love.
 [Pick up soccer group schedule.pdf](https://github.com/bchfonz/Startup/files/10514302/Pick.up.soccer.group.schedule.pdf)
