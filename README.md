@@ -1,5 +1,15 @@
 # Startup
-Ben: I've learned more about merging conlficts which is really helpful. I also didn't I could fork a repository which seems really helpful. I found the DadJokesAPI very interesting haha
+Ben: 
+
+Deploying my website ./deployFiles.sh -k scheduleproduction.pem -h sports260.click -s startup;
+
+chmod +x deployWebsite.sh fixes this--> zsh: permission denied: ./deployWebsite.sh
+
+<script> tag --> use to include JS code
+
+
+
+I've learned more about merging conlficts which is really helpful. I also didn't I could fork a repository which seems really helpful. I found the DadJokesAPI very interesting haha
 
 Things I learned from the simon HTML:
 Tags like div and header aren't always neccessary but they help keep everything organized
