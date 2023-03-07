@@ -16,6 +16,9 @@ More about tables in html. The table in scores.html used <.table>, <.thead>, <.t
 Things I learned from the simon CSS:
 I was going through copy+pasting code from the css project into my html one, and css really isn't all that much extra code. It doesn't really add any extra lines besides <.div> stuff, and just lengthens html ones. The biggest difference I saw was in the <.header> stuff. It didn't make a huge difference in result, like it works pretty much the same, but it definitely polished up some rough edges and made the website feel more legit and professional. 
 
+Things I learned from the simon JS:
+Similar, but more so than last time, JavaScript barely impacts the html file. It was really one or two lines changed, with the rest of the changes being in the .js files. At one point I got stuck, where I had all the correct code but the game wasn't working for some reason. It's because I had forgotten to copy the sounds files over, and since those files were involved in promise stuff, the game froze. I got stuck on that for a while. Promises really are pretty cool, but I can definetely see how they can mess up your code and the IDE won't alert you to them. 
+
 <br><br><br>
 
 
