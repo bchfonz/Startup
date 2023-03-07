@@ -1,5 +1,16 @@
 # Startup
 Ben: 
+Basic commands:
+git commit -am "merge(notes) combined both edits"
+git push
+ - Sends changes to the repository
+ git pull
+ - Pulls changes from the repository
+
+use "git add <file>..." to update what will be committed
+use "git restore <file>..." to discard changes in working directory
+
+Make sure to save the file before trying to commit and push changes
 
 Deploying my website ./deployFiles.sh -k scheduleproduction.pem -h sports260.click -s startup;
 
