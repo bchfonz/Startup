@@ -28,6 +28,18 @@ HTML can nest some of the things I've been learning about. For example you can u
 br and hr can be used to style the website a little bit
 
 <br>
+ 
+ 
+ SIMON: Ben
+ <script src='.js'></script> is how you add the JS file to an HTML file. add the .js file at the end of the body of the HTML file
+onclick="class.function(parameters)" is how to add JS functionality to your HTML
+
+document.querySelector pulls certain items from the DOM (HTML code) document.createElement('html tag') allows you to create HTML elements via javascript. This is useful for things like displaying the scores localStorage.setItem creates a new item in the local storage. This is used for the login page as well as a way to keep track of the scores localStorage.getItem gets items from the local storage. Use JSON.parse to then convert it into a string for JS
+
+View JS almost as a little editor. There is all this HTML that breaks down into nodes and a tree of nodes and the JS picks nodes and edits and adds to the nodes.
+ 
+ 
+ 
 
 Carson: Something I learned was more about github in general. I've never used it before extensively and it looks like in this class we will, and I know that we will need to use it in the future in jobs and what not. Just learning how to navigate the site and how everything works was very interesting. 
 
