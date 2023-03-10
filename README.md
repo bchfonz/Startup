@@ -1,5 +1,16 @@
 # Startup
 Ben: 
+Basic commands:
+git commit -am "merge(notes) combined both edits"
+git push
+ - Sends changes to the repository
+ git pull
+ - Pulls changes from the repository
+
+use "git add <file>..." to update what will be committed
+use "git restore <file>..." to discard changes in working directory
+
+Make sure to save the file before trying to commit and push changes
 
 Deploying my website ./deployFiles.sh -k scheduleproduction.pem -h sports260.click -s startup;
 
@@ -17,6 +28,27 @@ HTML can nest some of the things I've been learning about. For example you can u
 br and hr can be used to style the website a little bit
 
 <br>
+ 
+ SIMON: Ben
+ <script src='.js'></script> is how you add the JS file to an HTML file. add the .js file at the end of the body of the HTML file
+onclick="class.function(parameters)" is how to add JS functionality to your HTML
+
+document.querySelector pulls certain items from the DOM (HTML code) document.createElement('html tag') allows you to create HTML elements via javascript. This is useful for things like displaying the scores localStorage.setItem creates a new item in the local storage. This is used for the login page as well as a way to keep track of the scores localStorage.getItem gets items from the local storage. Use JSON.parse to then convert it into a string for JS
+
+View JS almost as a little editor. There is all this HTML that breaks down into nodes and a tree of nodes and the JS picks nodes and edits and adds to the nodes.
+ 
+ 
+ 
+ Midterm notes
+ DNS stand for Domain name system. It translates from human lagnuage to IP language (more or less)
+ CNAME is a DNS recrod type that points to another DNS
+ DOM textContent sets the child text for an element
+ Map function creates a new array populated with the results of calling a provided function on every element in the calling array
+ Reduce function takes an array and reduces down to one value
+ Filter function filters a vector and returns the filtered vector according to the parameters provided
+ 
+ 
+ 
 
 Carson: Something I learned was more about github in general. I've never used it before extensively and it looks like in this class we will, and I know that we will need to use it in the future in jobs and what not. Just learning how to navigate the site and how everything works was very interesting. 
 
