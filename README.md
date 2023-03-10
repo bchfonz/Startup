@@ -39,6 +39,15 @@ document.querySelector pulls certain items from the DOM (HTML code) document.cre
 View JS almost as a little editor. There is all this HTML that breaks down into nodes and a tree of nodes and the JS picks nodes and edits and adds to the nodes.
  
  
+ Midterm notes
+ DNS stand for Domain name system. It translates from human lagnuage to IP language (more or less)
+ CNAME is a DNS recrod type that points to another DNS
+ DOM textContent sets the child text for an element
+ Map function creates a new array populated with the results of calling a provided function on every element in the calling array
+ Reduce function takes an array and reduces down to one value
+ Filter function filters a vector and returns the filtered vector according to the parameters provided
+ 
+ 
  
 
 Carson: Something I learned was more about github in general. I've never used it before extensively and it looks like in this class we will, and I know that we will need to use it in the future in jobs and what not. Just learning how to navigate the site and how everything works was very interesting. 
