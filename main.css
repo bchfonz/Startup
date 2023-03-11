@@ -54,6 +54,7 @@ button:hover {
     height: 80px;
   }
   .calendar-table {
+    align-items: center;
     margin: 0 auto;
     width: 700px;
   }
