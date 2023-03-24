@@ -37,11 +37,12 @@ document.querySelector pulls certain items from the DOM (HTML code) document.cre
 
 View JS almost as a little editor. There is all this HTML that breaks down into nodes and a tree of nodes and the JS picks nodes and edits and adds to the nodes.
  
+ <br><br>
  
  Node.js notes:
  Note that when you start installing package dependencies NPM will create an additional file named package-lock.json and a directory named node-modules in your project directory. The node-modules directory contains the actual JavaScript for the package and all of its dependent packages. As you install several packages this directory will start to get very large. You do not want to check this directory into your source control system since it is so large and can be rebuilt using the information contained in the package.json and package-lock.json files. So make sure you include node-modules in your .gitignore file.
 
-When you clone your source code from GitHub to a new location, just run npm install in the project directory. This will cause NPM to download all of the previously installed packages and recreate the node-modules directory. The package-lock.json file tracks the version of the package that you installed. That way if rebuild your node-modules directory you will have the version of the package you initially installed and not the latest available version, which might not be compatible with your code.
+When you clone your source code from GitHub to a new location, just run npm install in the project directory. This will cause NPM to download all of the previously installed packages and recreate the node-modules directory. The package-lock.json file tracks the version of the package that you installed. That way if rebuild your node-modules directory you will have the version of the package you initially installed and not the latest available version, which might not be compatible your code.
  
  
  
@@ -52,6 +53,15 @@ When you clone your source code from GitHub to a new location, just run npm inst
  Map function creates a new array populated with the results of calling a provided function on every element in the calling array
  Reduce function takes an array and reduces down to one value
  Filter function filters a vector and returns the filtered vector according to the parameters provided
+ 
+ <br><br>
+ 
+ Simon service notes:
+ Download and require express
+ Make an express object
+ You can then use the objects for HTML calls like .get, .listen, .use, and .post 
+ express.Router() allows you to use service endpoints
+ 
  
  
  
