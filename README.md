@@ -62,6 +62,14 @@ When you clone your source code from GitHub to a new location, just run npm inst
  You can then use the objects for HTML calls like .get, .listen, .use, and .post 
  express.Router() allows you to use service endpoints
  
+  <br><br>
+ 
+ Simon DB notes:
+ Save credentials on production environment using dotenv package
+ Save credentials on a .env or .profile text file and export them
+ Add the link to your data base in the JS file
+ 
+ 
  
  
  
