@@ -69,6 +69,13 @@ When you clone your source code from GitHub to a new location, just run npm inst
  Save credentials on a .env or .profile text file and export them
  Add the link to your data base in the JS file
  
+ <br><br>
+ 
+ Simon Login notes:
+ Error 409(conflict) checks to see if there is already a user with the same email adress when someone tries to make new account
+ Error 401(unauthorized) is to check to see if the password is wrong or there isn't a user with the given email
+ Use endpoints to create and authorize the cookie containing the username and password
+ 
  
  
  
