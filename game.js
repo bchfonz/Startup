@@ -2,6 +2,10 @@ function makeEvent(){
     const dateEl = document.querySelector('#gameDate');
     const locationEl = document.querySelector('#location');
     window.location.href = "sched.html";
+    let eventsData = [];
+    const newEvent = {eventDate : dateEl, location : locationEl}
+    eventsData.push(newEvent);
+    localStorage.setItem('events', JSON.stringify(eventsData));
 }
 
 getEvent() {
