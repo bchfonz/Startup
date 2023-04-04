@@ -6,6 +6,7 @@ function makeEvent(){
     const newEvent = {eventDate : dateEl, location : locationEl}
     eventsData.push(newEvent);
     localStorage.setItem('events', JSON.stringify(eventsData));
+    window.location.href = "sched.html";
 }
 
 getEvent() {
