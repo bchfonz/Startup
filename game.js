@@ -18,10 +18,13 @@ getLocation() {
     return localStorage.getItem('location') ?? 'the moon';
 }
 
-saveGame(game) {
-    const loca = this.getLocation();
-    const event = this.getEvent();
+getGameDate() {
+    return localStorage.getItem('gameDate') ?? 'Jan 1';
 }
+
+
+
+
 
 
 saveScore(score) {
