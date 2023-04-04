@@ -1,8 +1,9 @@
 function makeEvent(){
     let dateEl = document.querySelector('#gameDate').value;
+    let timeEl = document.querySelector('#gameTime').value;
     let locationEl = document.querySelector('#location').value;
     let eventsData = [];
-    let newEvent = {eventDate : dateEl, location : locationEl}
+    let newEvent = {eventDate : dateEl, time : timeEl, location : locationEl}
     eventsData.push(newEvent);
     localStorage.setItem('events', JSON.stringify(eventsData));
     window.location.href = "sched.html";
@@ -66,67 +67,67 @@ function makeEvent(){
 
 //     return scores;
 // }
-getEvent() {
-    return localStorage.getItem('event') ?? 'stealing the moon';
-    //we are gru
-}
+// getEvent() {
+//     return localStorage.getItem('event') ?? 'stealing the moon';
+//     //we are gru
+// }
 
-getLocation() {
-    return localStorage.getItem('location') ?? 'the moon';
-}
+// getLocation() {
+//     return localStorage.getItem('location') ?? 'the moon';
+// }
 
-getGameDate() {
-    return localStorage.getItem('gameDate') ?? 'Jan 1';
-}
-
-
+// getGameDate() {
+//     return localStorage.getItem('gameDate') ?? 'Jan 1';
+// }
 
 
 
 
-saveScore(score) {
-    //pulls username
-    const userName = this.getPlayerName();
-    let scores = []; //iniaties empty array
-    //scores text is a json with all the good stuff
-    const scoresText = localStorage.getItem('scores'); 
-    if (scoresText) { //if scorestext has a val
-      scores = JSON.parse(scoresText); //parses json
-    }
-    scores = this.updateScores(userName, score, scores); //updates with new data
-
-    //sets the local with new data
-    localStorage.setItem('scores', JSON.stringify(scores));
-}
 
 
-updateScores(userName, score, scores) {
-    const date = new Date().toLocaleDateString(); //current date?
+// saveScore(score) {
+//     //pulls username
+//     const userName = this.getPlayerName();
+//     let scores = []; //iniaties empty array
+//     //scores text is a json with all the good stuff
+//     const scoresText = localStorage.getItem('scores'); 
+//     if (scoresText) { //if scorestext has a val
+//       scores = JSON.parse(scoresText); //parses json
+//     }
+//     scores = this.updateScores(userName, score, scores); //updates with new data
 
-    //initiates a new score frame
-    const newScore = { name: userName, score: score, date: date };
+//     //sets the local with new data
+//     localStorage.setItem('scores', JSON.stringify(scores));
+// }
 
-    let found = false;
-    //reorders the vals
-    for (const [i, prevScore] of scores.entries()) {
-        if (score > prevScore.score) {
-        scores.splice(i, 0, newScore);
-        found = true;
-        break;
-        }
-    }
 
-    if (!found) {
-        scores.push(newScore);
-    }
+// updateScores(userName, score, scores) {
+//     const date = new Date().toLocaleDateString(); //current date?
 
-    // limits the amount of vals we see
-    if (scores.length > 10) {
-        scores.length = 10;
-    }
+//     //initiates a new score frame
+//     const newScore = { name: userName, score: score, date: date };
 
-    return scores;
-}
+//     let found = false;
+//     //reorders the vals
+//     for (const [i, prevScore] of scores.entries()) {
+//         if (score > prevScore.score) {
+//         scores.splice(i, 0, newScore);
+//         found = true;
+//         break;
+//         }
+//     }
+
+//     if (!found) {
+//         scores.push(newScore);
+//     }
+
+//     // limits the amount of vals we see
+//     if (scores.length > 10) {
+//         scores.length = 10;
+//     }
+
+//     return scores;
+// }
 
 
 
