@@ -81,9 +81,10 @@ When you clone your source code from GitHub to a new location, just run npm inst
  
  
 <br><br><br>
-Carson: Something I learned was more about github in general. I've never used it before extensively and it looks like in this class we will, and I know that we will need to use it in the future in jobs and what not. Just learning how to navigate the site and how everything works was very interesting.
+<h3>Carson</h3> 
+Something I learned was more about github in general. I've never used it before extensively and it looks like in this class we will, and I know that we will need to use it in the future in jobs and what not. Just learning how to navigate the site and how everything works was very interesting.
 <br>
-Simon
+<h5>Simon</h5>
 >Things I learned from the simon HTML:
 >>More about tables in html. The table in scores.html used <.table>, <.thead>, <.tbody>, <.tr>, <.th>, and <.td>. That's a lot of tags for one element, but I guess I'll have this assignment to reference if I have trouble in the future. Also, I haven't used vscode much in the past, so learning better how to clone, push, and commit with git was good. 
 
@@ -96,9 +97,9 @@ Simon
 >Things I learned from the simon service:
 >>Something I wished we learn was why you need a deploy service instead of just the deploy files script. I mostly understand whats going on in the file, but wish we learned why those things go there. Something I learned is in the index.js file is why we needed to put all the files in the public folder. There's an order in which stuff is executed, and having one call for all the static things is much prettier and better than to individually call every file with the app.use(express.static('public')); line, but instead of public it'd be every file. 
 <br>
-Startup
->HTML
->>
+<h5>Startup</h5>
+>HTML and CSS
+>>I learned how to use both html and css better. The main page looks good and we need to update them for sure, but professor said it was fine to submit what's there. I learned that not everything has a have a css reference, and that tags in html can function as designing criteria without the need for css. 
 
 <br><br><br>
 
