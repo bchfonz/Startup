@@ -46,7 +46,20 @@ button:hover {
 
 
 
+@media (max-height: 600px) {
+  header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  main {
+    flex: 1 100vh;
+  }
+}
+
 /*--------CALANDER STUFF-------------------------------*/
+/*
 .calendar-day {
     width: 100px;
     min-width: 100px;
@@ -132,5 +145,5 @@ button:hover {
   .table-tight-vert > tfoot > tr > td {
     padding-top: 0;
     padding-bottom: 0;
-  }
+  } */
   /*---------------CALENDAR STUFF-----------------------
