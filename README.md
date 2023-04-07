@@ -76,6 +76,14 @@ When you clone your source code from GitHub to a new location, just run npm inst
  Error 401(unauthorized) is to check to see if the password is wrong or there isn't a user with the given email
  Use endpoints to create and authorize the cookie containing the username and password
  
+  <br><br>
+ 
+ Simon webSocket notes:
+ Websocket allows for allows data to be efficiently sent from peer to peer much quicker than previous technologies.
+ "send" functions sends messages
+ callback "onmessage" recevies messages
+ Websocket improves communication
+ 
  
  
  
