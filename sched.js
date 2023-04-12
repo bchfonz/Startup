@@ -14,7 +14,7 @@ async function loadEvents() {
         events = JSON.parse(eventsText);
       }
     }
-  
+    console.log("testingtesting")
     displayEvents(events);
   }
   
@@ -28,17 +28,20 @@ async function loadEvents() {
         const locaTdEl = document.createElement('td');
         const dateTdEl = document.createElement('td');
         const timeTdEl = document.createElement('td');
+        const peopleTdEl = document.createElement('td');
   
         positionTdEl.textContent = i + 1;
         locaTdEl.textContent = event.loca;
         dateTdEl.textContent = event.date;
         timeTdEl.textContent = event.time;
+        peopledEl.textContent = event.people;
   
         const rowEl = document.createElement('tr');
         rowEl.appendChild(positionTdEl);
         rowEl.appendChild(locaTdEl);
         rowEl.appendChild(dateTdEl);
         rowEl.appendChild(timeTdEl);
+        rowEl.appendChild(peopleTdEl);
   
         tableBodyEl.appendChild(rowEl);
       }
@@ -47,6 +50,31 @@ async function loadEvents() {
     }
   }
   
-  loadEvents();
+
+function incrementPeople(eventIndex) {
+  // Get the current event data from local storage
+  const eventsText = localStorage.getItem('events');
+  const events = JSON.parse(eventsText);
+
+  // Find the event with the given index
+  const event = events[eventIndex];
+
+  // Increment the people count
+  event.people++;
+
+  // Update the event data in local storage
+  localStorage.setItem('events', JSON.stringify(events));
+
+  // Update the table display
+  displayEvents(events);
+}
+  
+//   loadEvents();
+  
+// function addPeople(){
+//   let numPeople = localStorage.getItem('people');
+//   people = people + 1;
   
 
+  
+// }
