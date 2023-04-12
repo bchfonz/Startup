@@ -3,6 +3,7 @@ function makeEvent(){
     console.log("Make event called")
     let timeEl = document.querySelector('#gameTime').value;
     let locationEl = document.querySelector('#location').value;
+    
     let eventsString;
     let eventsData;
     if (localStorage.getItem('events') != null) {
