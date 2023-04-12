@@ -1,13 +1,22 @@
 function makeEvent(){
     let dateEl = document.querySelector('#gameDate').value;
+    console.log("Make event called")
     let timeEl = document.querySelector('#gameTime').value;
     let locationEl = document.querySelector('#location').value;
-    let eventsString = localStorage.getItem('events');
-    let eventsData = JSON.parse(eventsString);
+    let eventsString;
+    let eventsData;
+    if (localStorage.getItem('events') != null) {
+        eventsString = localStorage.getItem('events');
+        eventsData = JSON.parse(eventsString);
+    }
+    else {
+        eventsString = [];
+        eventsData = [];
+    }
     console.log(eventsData);
     let newEvent = {eventDate : dateEl, time : timeEl, location : locationEl}
     eventsData.push(newEvent);
-    localStorage.setItem('events', JSON.stringify(eventsData));
+    localStorage.setItem('events', JSON.stringify(eventsData)); debugger
     window.location.href = "sched.html";
 }
 
