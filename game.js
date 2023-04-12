@@ -14,9 +14,9 @@ function makeEvent(){
         eventsData = [];
     }
     console.log(eventsData);
-    let newEvent = {eventDate : dateEl, time : timeEl, location : locationEl}
+    let newEvent = {location : locationEl, eventDate : dateEl, time : timeEl}
     eventsData.push(newEvent);
-    localStorage.setItem('events', JSON.stringify(eventsData)); debugger
+    localStorage.setItem('events', JSON.stringify(eventsData));
     window.location.href = "sched.html";
 }
 
