@@ -5,52 +5,67 @@ async function loadEvents() {
       // Get the latest events from the service
       const response = await fetch('/api/events');
       events = await response.json();
+      ///console.log("Hello")
       // Save the events in case we go offline in the future
       localStorage.setItem('events', JSON.stringify(events));
     } catch {
       // If there was an error then just use the last saved events
       const eventsText = localStorage.getItem('events');
+      //console.log("hell on earth")
       if (eventsText) {
         events = JSON.parse(eventsText);
+        //console.log(events)
       }
     }
     console.log("testingtesting")
     displayEvents(events);
-  }
+}
   
-  function displayEvents(events) {
-    const tableBodyEl = document.querySelector('#events');
-  
-    if (events.length) {
-      // Update the DOM with the events
-      for (const [i, event] of events.entries()) {
-        const positionTdEl = document.createElement('td');
-        const locaTdEl = document.createElement('td');
-        const dateTdEl = document.createElement('td');
-        const timeTdEl = document.createElement('td');
-        const peopleTdEl = document.createElement('td');
-  
-        positionTdEl.textContent = i + 1;
-        locaTdEl.textContent = event.loca;
-        dateTdEl.textContent = event.date;
-        timeTdEl.textContent = event.time;
-        peopledEl.textContent = event.people;
-  
-        const rowEl = document.createElement('tr');
-        rowEl.appendChild(positionTdEl);
-        rowEl.appendChild(locaTdEl);
-        rowEl.appendChild(dateTdEl);
-        rowEl.appendChild(timeTdEl);
-        rowEl.appendChild(peopleTdEl);
-  
-        tableBodyEl.appendChild(rowEl);
-      }
-    } else {
-      tableBodyEl.innerHTML = '<tr><td colSpan=4>Be the first to plan an event</td></tr>';
-    }
-  }
-  
+function displayEvents(events) {
+  const tableBodyEl = document.querySelector('#events');
 
+  if (events.length) {
+    // Update the DOM with the events
+    for (const [i, event] of events.entries()) {
+      const positionTdEl = document.createElement('td');
+      const locaTdEl = document.createElement('td');
+      const dateTdEl = document.createElement('td');
+      const timeTdEl = document.createElement('td');
+      const peopleTdEl = document.createElement('td');
+      const buttTdEl = document.createElement('td');
+
+      positionTdEl.textContent = i + 1;
+      locaTdEl.textContent = event.location;
+      dateTdEl.textContent = event.eventDate;
+      timeTdEl.textContent = event.time;
+      peopleTdEl.textContent = event.people;
+      
+      let button = document.createElement('button');
+      button.textContent = ' ';
+      button.innerText = 'RSVP';
+      //button.setAttribute(); // 'onclick', incrementing function here
+
+
+      buttTdEl.appendChild(button);
+
+
+      const rowEl = document.createElement('tr');
+      rowEl.appendChild(positionTdEl);
+      rowEl.appendChild(locaTdEl);
+      rowEl.appendChild(dateTdEl);
+      rowEl.appendChild(timeTdEl);
+      rowEl.appendChild(peopleTdEl);
+      rowEl.appendChild(buttTdEl);
+
+      tableBodyEl.appendChild(rowEl);
+    }
+  } else {
+    tableBodyEl.innerHTML = '<tr><td colSpan=4>Be the first to plan an event</td></tr>';
+  }
+}
+  
+loadEvents();
+  
 function incrementPeople(eventIndex) {
   // Get the current event data from local storage
   const eventsText = localStorage.getItem('events');
@@ -68,13 +83,6 @@ function incrementPeople(eventIndex) {
   // Update the table display
   displayEvents(events);
 }
-  
-//   loadEvents();
-  
-// function addPeople(){
-//   let numPeople = localStorage.getItem('people');
-//   people = people + 1;
-  
 
   
 // }
