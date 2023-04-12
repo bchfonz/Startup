@@ -5,7 +5,6 @@ async function loadEvents() {
       // Get the latest events from the service
       const response = await fetch('/api/events');
       events = await response.json();
-      debugger
       // Save the events in case we go offline in the future
       localStorage.setItem('events', JSON.stringify(events));
     } catch {
