@@ -19,37 +19,51 @@ async function loadEvents() {
     }
     console.log("testingtesting")
     displayEvents(events);
-  }
+}
   
-  function displayEvents(events) {
-    const tableBodyEl = document.querySelector('#events');
-  
-    if (events.length) {
-      // Update the DOM with the events
-      for (const [i, event] of events.entries()) {
-        const positionTdEl = document.createElement('td');
-        const locaTdEl = document.createElement('td');
-        const dateTdEl = document.createElement('td');
-        const timeTdEl = document.createElement('td');
-  
-        positionTdEl.textContent = i + 1;
-        locaTdEl.textContent = event.location;
-        dateTdEl.textContent = event.eventDate;
-        timeTdEl.textContent = event.time;
-  
-        const rowEl = document.createElement('tr');
-        rowEl.appendChild(positionTdEl);
-        rowEl.appendChild(locaTdEl);
-        rowEl.appendChild(dateTdEl);
-        rowEl.appendChild(timeTdEl);
-  
-        tableBodyEl.appendChild(rowEl);
-      }
-    } else {
-      tableBodyEl.innerHTML = '<tr><td colSpan=4>Be the first to plan an event</td></tr>';
+function displayEvents(events) {
+  const tableBodyEl = document.querySelector('#events');
+
+  if (events.length) {
+    // Update the DOM with the events
+    for (const [i, event] of events.entries()) {
+      const positionTdEl = document.createElement('td');
+      const locaTdEl = document.createElement('td');
+      const dateTdEl = document.createElement('td');
+      const timeTdEl = document.createElement('td');
+      const peopleTdEl = document.createElement('td');
+      const buttTdEl = document.createElement('td');
+
+      positionTdEl.textContent = i + 1;
+      locaTdEl.textContent = event.location;
+      dateTdEl.textContent = event.eventDate;
+      timeTdEl.textContent = event.time;
+      peopleTdEl.textContent = event.people;
+      
+      let button = document.createElement('button');
+      button.textContent = ' ';
+      button.innerText = 'RSVP';
+      //button.setAttribute(); // 'onclick', incrementing function here
+
+
+      buttTdEl.appendChild(button);
+
+
+      const rowEl = document.createElement('tr');
+      rowEl.appendChild(positionTdEl);
+      rowEl.appendChild(locaTdEl);
+      rowEl.appendChild(dateTdEl);
+      rowEl.appendChild(timeTdEl);
+      rowEl.appendChild(peopleTdEl);
+      rowEl.appendChild(buttTdEl);
+
+      tableBodyEl.appendChild(rowEl);
     }
+  } else {
+    tableBodyEl.innerHTML = '<tr><td colSpan=4>Be the first to plan an event</td></tr>';
   }
+}
   
-  loadEvents();
+loadEvents();
   
 
