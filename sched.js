@@ -5,13 +5,16 @@ async function loadEvents() {
       // Get the latest events from the service
       const response = await fetch('/api/events');
       events = await response.json();
+      ///console.log("Hello")
       // Save the events in case we go offline in the future
       localStorage.setItem('events', JSON.stringify(events));
     } catch {
       // If there was an error then just use the last saved events
       const eventsText = localStorage.getItem('events');
+      //console.log("hell on earth")
       if (eventsText) {
         events = JSON.parse(eventsText);
+        //console.log(events)
       }
     }
     console.log("testingtesting")
@@ -30,8 +33,8 @@ async function loadEvents() {
         const timeTdEl = document.createElement('td');
   
         positionTdEl.textContent = i + 1;
-        locaTdEl.textContent = event.loca;
-        dateTdEl.textContent = event.date;
+        locaTdEl.textContent = event.location;
+        dateTdEl.textContent = event.eventDate;
         timeTdEl.textContent = event.time;
   
         const rowEl = document.createElement('tr');
