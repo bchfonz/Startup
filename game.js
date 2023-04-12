@@ -2,7 +2,9 @@ function makeEvent(){
     let dateEl = document.querySelector('#gameDate').value;
     let timeEl = document.querySelector('#gameTime').value;
     let locationEl = document.querySelector('#location').value;
-    let eventsData = [];
+    let eventsString = localStorage.getItem('events');
+    let eventsData = JSON.parse(eventsString);
+    console.log(eventsData);
     let newEvent = {eventDate : dateEl, time : timeEl, location : locationEl}
     eventsData.push(newEvent);
     localStorage.setItem('events', JSON.stringify(eventsData));
