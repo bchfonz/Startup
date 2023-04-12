@@ -24,6 +24,8 @@ async function loadEvents() {
 function displayEvents(events) {
   const tableBodyEl = document.querySelector('#events');
 
+  tableBodyEl.innerHTML = '';
+
   if (events.length) {
     // Update the DOM with the events
     for (const [i, event] of events.entries()) {
@@ -41,9 +43,12 @@ function displayEvents(events) {
       peopleTdEl.textContent = event.people;
       
       let button = document.createElement('button');
-      button.textContent = ' ';
+      button.textContent = 'Increment';
       button.innerText = 'RSVP';
       //button.setAttribute(); // 'onclick', incrementing function here
+      button.addEventListener('click', () => {
+        incrementPeople(i);
+      })
 
 
       buttTdEl.appendChild(button);
