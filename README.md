@@ -118,7 +118,10 @@ Something I learned was more about github in general. I've never used it before 
 >>Something I wished we learn was why you need a deploy service instead of just the deploy files script. I mostly understand whats going on in the file, but wish we learned why those things go there. Something I learned is in the index.js file is why we needed to put all the files in the public folder. There's an order in which stuff is executed, and having one call for all the static things is much prettier and better than to individually call every file with the app.use(express.static('public')); line, but instead of public it'd be every file. 
 
 >DB
->>When running on local host, for simon you have to use port 3000 and for the startup I'll have to use port 4000. This is something I didn't understand until I met with the TAs and made it go by way quicker. Using the default go live thing with vscode works when you only have a frontend, but not when you have a front and backend. 
+>>When running on local host, for simon you have to use port 3000 and for the startup I'll have to use port 4000. This is something I didn't understand until I met with the TAs and made it go by way quicker. Using the default go live thing with vscode works when you only have a frontend, but not when you have a front and backend.
+
+>Login
+>>I think the cookies are pretty cool. They pretty much validate everything the user does and tracks it. Logging onto websites before never really seemed like that much work to me, but while you are logged in, the site can pretty much track everything you do and store it in a database. Scary but mostly cool!
 
 <br>
 <h5>Startup</h5>
