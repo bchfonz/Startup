@@ -45,6 +45,7 @@ function displayEvents(events) {
       let button = document.createElement('button');
       button.textContent = 'Increment';
       button.innerText = 'RSVP';
+      button.className = 'table-button';
       //button.setAttribute(); // 'onclick', incrementing function here
       button.addEventListener('click', () => {
         incrementPeople(i);

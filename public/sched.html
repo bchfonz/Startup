@@ -4,72 +4,82 @@
       <meta charset="UTF-8" />
       <!-- Tell browsers not to scale the viewport automatically -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Pickup Soccer</title>
+      <title>Pickup Soccer - Calendar</title>
       <link rel="icon" href="kickNoBack.png" />
-      <link rel="stylesheet" href="main.css">
+      
       <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
       <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-    crossorigin="anonymous"/>
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"/>
+      <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="sched.css">
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
+  </head>
   <body>
-    
-    <h1>Pickup Soccer</h1>
-
-    <nav>
-        <!-- Menu is a semantic alternative to <ul> that represents an interaction -->
-        <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Play</a></li>
-          <li><a href="game.html">Scores</a></li>
-        </menu>
-    </nav>
-
-    <div class="col">
-      <div class="grid">
-          <button onclick="window.location.href='game.html';"> Make Game </button>
-      </div>
-    </div>
-    <div class="col">
-      <div class="grid">
-          <button onclick="window.location.href='sched.html';"> Schedule </button>
-      </div>
-    </div>
-    
-  
-    <h1>Calendar</h1>
-    <div class="container theme-showcase">
-      <div id="holder" class="row" ></div>
-    </div>
-    <div class="wrapper">
-      <div class="box1">
-        <!-- table copied from the simon stuff-->
-        <main class="container-fluid bg-secondary text-center">
-          <table class="table table-warning table-striped-columns">
-            <thead class="table-dark">
-              <tr>
-                <th>#</th>
-                <th>Location</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>People attending</th>
-                <th>Click to RSVP</th>
-              </tr>
-            </thead>
-            <tbody id="events"></tbody>
-          </table>
-        </main>
-      </div>
-      <div class="box2">
-        <div id="quote" class="quote-box bg-light test-dark"></div>
-      </div>
-    </div> 
-    <footer>
+    <main>
       
+      <div class="game-container">
+        <div class="game-big-box">
+          <h1>Pickup Soccer</h1>
+        </div>
+        <div class="nav-box">
+            <div class="button-container">
+                <div class="nav-col">
+                  <div class="nav-grid">
+                    <button class="nav-button" onclick="window.location.href='game.html';">Make Game</button>
+                  </div>
+                </div>
+                <div class="nav-col">
+                  <div class="nav-grid">
+                    <button class="nav-button" onclick="window.location.href='sched.html';">Schedule</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <br>
+      <h1>Calendar</h1>
+      <div class="container theme-showcase">
+        <div id="holder" class="row" ></div>
+      </div>
+      <div class="wrapper">
+        <div class="box1">
+          <!-- table copied from the simon stuff-->
+          <main-sched class="container-fluid text-center">
+            <table class="table table-warning table-striped-columns">
+              <thead class="table-dark">
+                <tr>
+                  <th>#</th>
+                  <th>Location</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>People attending</th>
+                  <th>Click to RSVP</th>
+                </tr>
+              </thead>
+              <tbody id="events"></tbody>
+            </table>
+          </main>
+        </div>
+        <div class="box2">
+          <div id="quote" class="quote-box bg-gray test-dark"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-dark text-muted">
+      <div class="container-fluid">
+        <span class="text-reset">Carson Koehle and Ben Fonbuena</span>
+        <a
+          class="text-reset"
+          href="https://github.com/bchfonz/Startup"
+          >Github</a
+        >
+      </div>
     </footer>
 
     <script src="sched.js"></script>

@@ -1,0 +1,36 @@
+/*just deals with the stuff only found on sched*/
+
+.quote-box {
+    margin-top: 1em;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: gray;
+}
+  
+.quote {
+    font-style: italic;
+}
+  
+.author {
+    font-weight: bold;
+    text-align: right;
+}
+  
+.author::before {
+    content: " - ";
+}
+
+
+  
+/* Change the background color of even rows in the table body */
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #f1f1f1;
+}
+
+/*tbody {
+    background-color: greenn;
+}*/
+
+.table tbody td {
+    color: #333 !important;
+}

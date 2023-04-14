@@ -4,43 +4,58 @@
         <meta charset="UTF-8" />
         <!-- Tell browsers not to scale the viewport automatically -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pickup Soccer</title>
+        <title>Pickup Soccer - Game</title>
         <link rel="icon" href="kickNoBack.png" />
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <h1>Pickup Soccer</h1>
-
-        <nav>
-            <!-- Menu is a semantic alternative to <ul> that represents an interaction -->
-            <menu>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="sched.html">Play</a></li>
-              <li><a href="#">Scores</a></li>
-            </menu>
-        </nav>
-
-        <div class="col">
-            <div class="grid">
-                <button onclick="window.location.href='game.html';"> Make Game </button>
+        <div class="game-container">
+            <div class="game-big-box">
+              <h1>Pickup Soccer</h1>
+            </div>
+            <div class="nav-box">
+                <div class="button-container">
+                    <div class="nav-col">
+                        <div class="nav-grid">
+                            <button class="nav-button" onclick="window.location.href='game.html';">Make Game</button>
+                        </div>
+                    </div>
+                    <div class="nav-col">
+                        <div class="nav-grid">
+                            <button class="nav-button" onclick="window.location.href='sched.html';">Schedule</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col">
-            <div class="grid">
-                <button onclick="window.location.href='sched.html';"> Schedule </button>
+        <br>
+        <h1>Creat new event</h1>
+        <main>
+            <div class="form-container">
+                <div class="form-group">
+                <input type="text" id="gameLocation" name="location">
+                <label for="location">Location</label>
+                </div>
+                <div class="form-group">
+                <input type="date" id="gameDate" name="makeGame">
+                <label for="gameDate">Date</label>
+                </div>
+                <div class="form-group">
+                <input type="time" id="gameTime" name="time">
+                <label for="time">Time</label>
+                </div>
+                <div class="btn-container">
+                <button class="btn btn-primary" onClick="makeEvent()">Create game</button>
+                </div>
             </div>
-        </div>
+        </main>    
+        <footer class="dark-footer">
+            <div class="container-fluid">
+              <span class="text-reset">Carson Koehle and Ben Fonbuena</span>
+              <a class="text-reset" href="https://github.com/bchfonz/Startup">Github</a>
+            </div>
+        </footer>
 
-        <p>Creat new event</p>
-        <input type="text" id="location" name="location">
-        <label for="location">Location</label>
-        <input type="date" id="gameDate" name="makeGame">
-        <label for="gameDate">Date</label>
-        <input type="time" id="gameTime" name="time">
-        <label for="time">Time</label>
-        
-
-        <button class="btn btn-primary" onClick="makeEvent()">Create game</button>
 
         <script src="game.js"></script>
     </body>
