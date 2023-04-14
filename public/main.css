@@ -157,9 +157,10 @@ h3 {
 
 .form-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .form-group {
@@ -244,6 +245,18 @@ main-sched {
   margin-left: 10px;
 }
 
+tbody {
+  background-color: white;
+}
+
+tr td:nth-child(even) {
+  background-color: #AD98CD;
+}
+
+tr td:nth-child(odd) {
+  background-color: #B9A3DA;
+}
+
 /*---------------sched stuff--------------------*/
 
 
@@ -260,5 +273,14 @@ main-sched {
   }
   .box1 { /* when screen is smaller, reduces margin gap between table and quote*/
     margin-bottom: 10;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    justify-content: space-around;
+  }
+  .form-group {
+    flex-basis: 45%;
   }
 }
