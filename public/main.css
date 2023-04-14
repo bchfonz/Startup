@@ -12,6 +12,11 @@ body {
     min-width: 375px;
     font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
+
+/*html, body {
+  height: 97%;
+}*/
+
 h1 {
   text-align: center;
   font-size: xx-large;
@@ -43,7 +48,17 @@ button:hover {
   background-color: #AD98CD;
 }
 
+/*.content {
+  min-height: calc(100% - 30px);
+}
 
+footer {
+  height: 100px;
+  position: relative;
+  margin-top: - 30px;
+  clear:both;
+  outline: #AD98CD;
+}*/
 
 
 @media (max-height: 600px) {
