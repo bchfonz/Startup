@@ -122,6 +122,9 @@ Something I learned was more about github in general. I've never used it before 
 
 >Login
 >>I think the cookies are pretty cool. They pretty much validate everything the user does and tracks it. Logging onto websites before never really seemed like that much work to me, but while you are logged in, the site can pretty much track everything you do and store it in a database. Scary but mostly cool!
+ 
+>Websocket
+>> I've always heard 'ping', like in reference to video game connection and what not. I never knew, although it makes a whole lot of sense, to have a 'pong' that the user sends back to the client or what have you to make sure it is still wanting a connection.
 
 <br>
 <h5>Startup</h5>
