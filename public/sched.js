@@ -65,7 +65,7 @@ function displayEvents(events) {
       tableBodyEl.appendChild(rowEl);
     }
   } else {
-    tableBodyEl.innerHTML = '<tr><td colSpan=4>Be the first to plan an event</td></tr>';
+    tableBodyEl.innerHTML = '<tr><td colSpan=6>Be the first to plan an event</td></tr>';
   }
 }
   
