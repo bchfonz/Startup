@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const DB = require('./database.js');
 
 // The service port. In production the front-end code is statically hosted by the service on the same port.
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
@@ -15,14 +16,14 @@ const apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
 // GetScores
-apiRouter.get('/scores', (_req, res) => {
-  res.send(scores);
+apiRouter.get('/events', (_req, res) => {
+  res.send(events);
 });
 
 // SubmitScore
-apiRouter.post('/score', (req, res) => {
-  scores = updateScores(req.body, scores);
-  res.send(scores);
+apiRouter.post('/events', (req, res) => {
+  scores = updateEvents(req.body, events);
+  res.send(events);
 });
 
 // Return the application's default page if the path is unknown
