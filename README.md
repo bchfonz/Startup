@@ -126,11 +126,17 @@ Something I learned was more about github in general. I've never used it before 
 >Websocket
 >> I've always heard 'ping', like in reference to video game connection and what not. I never knew, although it makes a whole lot of sense, to have a 'pong' that the user sends back to the client or what have you to make sure it is still wanting a connection.
 
+>React
+>> I had a lot of issues with this one. I wasn't able to test anything locally because I think there was an issue with port 3000 and 3001 not communicating correctly with each other? A ta helped me for like an hour and a half, and even then the problem didn't get resolved. But, I got a lot more comfortable with the npm commands and what they do and why you would want to use a command in a specific instance. For this to work, you really had to change the entire structure of the code, like changing most of the js files to jsx and all the new folders, as well as making css files for each individual jsx. 
+
 <br>
 <h5>Startup</h5>
  
 >HTML and CSS
->>I learned how to use both html and css better. The main page looks good and we need to update them for sure, but professor said it was fine to submit what's there. I learned that not everything has a have a css reference, and that tags in html can function as designing criteria without the need for css. 
+>>I learned how to use both html and css better. The main page looks good and we need to update them for sure, but professor said it was fine to submit what's there. I learned that not everything has a have a css reference, and that tags in html can function as designing criteria without the need for css.
+ 
+>JavaScript
+>>Figuring out how to build html inside javascript was interesting. I also liked applying the listeners, because I've always been interested in how a site can track different actions you do. Although I didn't like encountering bugs, they taught me things like how you need your code to be prepared for different possibilites, like if there is no local data, passing empty arrays so there is something that is empty instead of nothingness. Cool stuff. 
 
 <br><br><br>
 
