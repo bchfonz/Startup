@@ -133,7 +133,10 @@ Something I learned was more about github in general. I've never used it before 
 <h5>Startup</h5>
  
 >HTML and CSS
->>I learned how to use both html and css better. The main page looks good and we need to update them for sure, but professor said it was fine to submit what's there. I learned that not everything has a have a css reference, and that tags in html can function as designing criteria without the need for css. 
+>>I learned how to use both html and css better. The main page looks good and we need to update them for sure, but professor said it was fine to submit what's there. I learned that not everything has a have a css reference, and that tags in html can function as designing criteria without the need for css.
+ 
+>JavaScript
+>>Figuring out how to build html inside javascript was interesting. I also liked applying the listeners, because I've always been interested in how a site can track different actions you do. Although I didn't like encountering bugs, they taught me things like how you need your code to be prepared for different possibilites, like if there is no local data, passing empty arrays so there is something that is empty instead of nothingness. Cool stuff. 
 
 <br><br><br>
 
