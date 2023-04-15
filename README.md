@@ -126,6 +126,9 @@ Something I learned was more about github in general. I've never used it before 
 >Websocket
 >> I've always heard 'ping', like in reference to video game connection and what not. I never knew, although it makes a whole lot of sense, to have a 'pong' that the user sends back to the client or what have you to make sure it is still wanting a connection.
 
+>React
+>> I had a lot of issues with this one. I wasn't able to test anything locally because I think there was an issue with port 3000 and 3001 not communicating correctly with each other? A ta helped me for like an hour and a half, and even then the problem didn't get resolved. But, I got a lot more comfortable with the npm commands and what they do and why you would want to use a command in a specific instance. For this to work, you really had to change the entire structure of the code, like changing most of the js files to jsx and all the new folders, as well as making css files for each individual jsx. 
+
 <br>
 <h5>Startup</h5>
  
