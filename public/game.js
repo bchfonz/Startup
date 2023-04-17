@@ -8,6 +8,8 @@ function makeEvent(){
     console.log("Check 1");
     let eventsString;
     let eventsData;
+    let attendees = 1;
+
     if (localStorage.getItem('events') != null) {
         eventsString = localStorage.getItem('events');
         eventsData = JSON.parse(eventsString);
