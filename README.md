@@ -96,6 +96,15 @@ src directory has react components from react-template
  use Navlink nd to= instead of the anchor tags that we've been using for links
  use className instead of class in react
  
+  <br><br>
+  
+  Startup JS notes:
+  I learned how to use the debugger on the browser to find bugs.
+  I learned that I can find bugs much faster by setting breakpoints and stepping through my code one line at a time and really thinking about what is happening with each line of code.
+  I learned how to use get and set functions for local storage and how I can use that to interact with the DOM
+ 
+ 
+ 
  
  
  
