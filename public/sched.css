@@ -34,3 +34,9 @@
 .table tbody td {
     color: #333 !important;
 }
+
+.players {
+    flex: 1;
+    width: 100%;
+    padding: 0.5em;
+}
