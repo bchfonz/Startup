@@ -19,14 +19,17 @@
 })();
 
 async function loginUser() {
+  console.log("Check - login");
   loginOrCreate(`/api/auth/login`);
 }
 
 async function createUser() {
+  console.log("Check - create");
   loginOrCreate(`/api/auth/create`);
 }
 
 async function loginOrCreate(endpoint) {
+  console.log("Check - LC1");
   const userName = document.querySelector('#userName')?.value;
   const password = document.querySelector('#userPassword')?.value;
   const response = await fetch(endpoint, {
@@ -36,6 +39,13 @@ async function loginOrCreate(endpoint) {
       'Content-type': 'application/json; charset=UTF-8',
     },
   });
+
+  /////
+  console.log("Check - LC2");
+  console.log(userName);
+  console.log(password);
+  //////
+  
   try {
     const body = await response.json();
     // handle successful response...
@@ -46,7 +56,7 @@ async function loginOrCreate(endpoint) {
 
   if (response?.status === 200) {
     localStorage.setItem('userName', userName);
-    window.location.href = 'index.html';
+    window.location.href = 'game.html';
   } else {
     const modalEl = document.querySelector('#msgModal');
     modalEl.querySelector('.modal-body').textContent = `⚠ Error: ${body.msg}`;
@@ -55,8 +65,8 @@ async function loginOrCreate(endpoint) {
   }
 }
 
-function play() {
-  window.location.href = 'index.html';
+function goToGame() {
+  window.location.href = 'game.html';
 }
 
 function logout() {
