@@ -125,9 +125,13 @@ function configureWebSocket() {
   socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
   socket.onopen = (event) => {
     displayMsg('system', 'game', 'connected');
+    socket.send(JSON.stringify(event));
   };
   socket.onclose = (event) => {
     displayMsg('system', 'game', 'disconnected');
+  };
+  socket.onmessage = (event) => {
+    displayMsg("this is totolly working")
   };
 }
 
@@ -137,13 +141,13 @@ function displayMsg(cls, from, msg) {
     `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
 }
 
-// function broadcastEvent(from, type, value) {
-//   const event = {
-//     from: from,
-//     type: type,
-//     value: value,
-//   };
-//   socket.send(JSON.stringify(event));
-// }
+function broadcastEvent(from, type, value) {
+  const event = {
+    from: from,
+    type: type,
+    value: value,
+  };
+  
+}
 
 configureWebSocket();
