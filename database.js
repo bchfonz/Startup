@@ -19,12 +19,12 @@ function addEvents(event) {
 }
 
 function getEvents() {
-  const query = {event: {$gt: 0}};
-  const options = {
-    sort: {event: -1},
-    // limit: 10,
-  };
-  const cursor = scoreCollection.find(query, options);
+  const query = {};
+  // const options = {
+  //   sort: {event: -1},
+  //   // limit: 10,
+  // };
+  const cursor = eventCollection.find(query);
   return cursor.toArray();
 }
 

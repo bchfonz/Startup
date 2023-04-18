@@ -83,15 +83,19 @@ secureApiRouter.use(async (req, res, next) => {
 });
 
 // GetScores
-/*apiRouter.get('/events', (_req, res) => {
+apiRouter.get('/events', (_req, res) => {
+  const events = await DB.getEvents();
   res.send(events);
 });
 
 // SubmitScore    //do we need this?
 apiRouter.post('/events', (req, res) => {
-  scores = updateEvents(req.body, events);
+  DB.addEvents(req.body);
+  const events = await DB.getEvents();
+  // scores = updateEvents(req.body, events);
+
   res.send(events);
-});*/
+});
 
 // Default error handler
 app.use(function (err, req, res, next) {
