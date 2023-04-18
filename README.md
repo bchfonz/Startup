@@ -147,6 +147,9 @@ Something I learned was more about github in general. I've never used it before 
 >JavaScript
 >>Figuring out how to build html inside javascript was interesting. I also liked applying the listeners, because I've always been interested in how a site can track different actions you do. Although I didn't like encountering bugs, they taught me things like how you need your code to be prepared for different possibilites, like if there is no local data, passing empty arrays so there is something that is empty instead of nothingness. Cool stuff. 
 
+>Services
+>>I definetly think that some services are better than other. Connecting to a database and having a login/authenticate feature is really important, and having things like that work makes your website more secure and have value past visiting it once, since you can access past data. I think Websocket was cool and interesting, but I can't think of many practical uses for it. Maybe I just need to be exposed to it more.
+
 <br><br><br>
 
 
