@@ -1,5 +1,7 @@
 const {MongoClient} = require('mongodb');
-const dotenv = require("dotenv")
+const bcrypt = require('bcrypt');
+const dotenv = require('dotenv')
+const uuid = require('uuid')
 dotenv.config();
 const userName = process.env.MONGOUSER;
 const password = process.env.MONGOPASSWORD;
@@ -13,7 +15,7 @@ const url = `mongodb+srv://${userName}:${password}@${hostname}/`;
 
 const client = new MongoClient(url);
 const eventCollection = client.db('startup').collection('events');
-const userCollection = client.db('simon').collection('user');
+const userCollection = client.db('startup').collection('user');
 
 
 

@@ -4,7 +4,8 @@
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongodb": "^5.2.0"
+    "mongodb": "^5.2.0",
+    "uuid": "^9.0.0"
   },
   "name": "startup",
   "description": "Ben: \r Basic commands:\r git commit -am \"merge(notes) combined both edits\"\r git push\r  - Sends changes to the repository\r  git pull\r  - Pulls changes from the repository",
