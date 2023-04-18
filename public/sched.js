@@ -114,5 +114,36 @@ function callService(url, displayCallback) {
 }
 callService("https://api.quotable.io/random", displayQuote);
 
-  
+
+
+// Websocket stuff
+
+let socket;
+
+function configureWebSocket() {
+  const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+  socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+  socket.onopen = (event) => {
+    displayMsg('system', 'game', 'connected');
+  };
+  socket.onclose = (event) => {
+    displayMsg('system', 'game', 'disconnected');
+  };
+}
+
+function displayMsg(cls, from, msg) {
+  const chatText = document.querySelector('#player-messages');
+  chatText.innerHTML =
+    `<div class="event"><span class="${cls}-event">${from}</span> ${msg}</div>` + chatText.innerHTML;
+}
+
+// function broadcastEvent(from, type, value) {
+//   const event = {
+//     from: from,
+//     type: type,
+//     value: value,
+//   };
+//   socket.send(JSON.stringify(event));
 // }
+
+configureWebSocket();
