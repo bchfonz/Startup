@@ -12,17 +12,21 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Router for service endpoints
-const apiRouter = express.Router();
+var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
 // GetScores
 apiRouter.get('/events', (_req, res) => {
+  const events = await DB.getEvents();
   res.send(events);
 });
 
 // SubmitScore
 apiRouter.post('/events', (req, res) => {
-  scores = updateEvents(req.body, events);
+  DB.addEvents(req.body);
+  const events = await DB.getEvents();
+  // scores = updateEvents(req.body, events);
+
   res.send(events);
 });
 
