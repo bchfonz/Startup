@@ -111,6 +111,13 @@ src directory has react components from react-template
  Make sure to add local variables to configure the database. 
  When POSTing, make sure to add method: POST. 
  
+ <br>
+ Startup React Notes:
+ <ul>
+  <li>You can use a react template to get started. The template give you App.js where you will implement your components<li/>
+  <li>Import components into App.js<li/>
+ </ul>
+ 
  
  
  
