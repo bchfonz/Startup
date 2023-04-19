@@ -103,6 +103,14 @@ src directory has react components from react-template
   I learned that I can find bugs much faster by setting breakpoints and stepping through my code one line at a time and really thinking about what is happening with each line of code.
   I learned how to use get and set functions for local storage and how I can use that to interact with the DOM
  
+ <br><br>
+ 
+ Startup services notes:
+ Express abstracts away functions like get and post. 
+ Use get to make a request to the server that will return the data that you want to get. Use post to make a request to add data to the server. 
+ Make sure to add local variables to configure the database. 
+ When POSTing, make sure to add method: POST. 
+ 
  
  
  
