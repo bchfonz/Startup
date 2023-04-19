@@ -1,38 +1,286 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  margin: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 375px;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+  background-color: #d3cad2 !important;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+text-align: center;
+font-size: xx-large;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h5 {
+align-self: center;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+align-items: center;
+border-radius: 10px;
+}
+.index-big-box {
+width: 100%;
+height: 300px;
+background-color: gray;
+padding-top: 115px;
+padding-bottom: 115px;
+margin-bottom: 20px;
+}
+.small-box {
+width: 50%;
+height: 200px;
+background-color: #B9A3DA;
+
+}
+
+button:hover {
+background-color: #AD98CD;
+}
+
+main {
+margin-bottom: 30px;
+}
+
+footer {
+/* Set the footer to fixed position */
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+height: 30px;
+background-color: #ccc;
+}
+
+footer a {
+float: right;
+}
+
+.dark-footer {
+background-color: #24272c;
+color: #636363;
+padding: 3px;
+padding-left: 12px;
+}
+
+.dark-footer a {
+padding-right: 10px;
+color: #636363 !important;
+}
+
+
+
+/*--------nav stuff ---------------*/
+.game-container {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+
+.game-big-box {
+width: 100%;
+height: 300px;
+background-color: gray;
+padding-top: 115px;
+padding-bottom: 115px;
+margin-bottom: -20px;
+}
+
+.game-big-box h1 {
+text-align: center;
+font-size: xx-large;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 100; 
+}
+
+.nav-box {
+width: 100%;
+background-color: #9e989e;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 0;
+margin-top: -20px;
+}
+
+.button-container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.nav-col {
+margin-left: 10px;
+}
+
+.nav-grid {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+}
+
+.nav-button {
+background-color: #B9A3DA;
+color: #333;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+margin-left: 10px;
+}
+
+/*-------------nav stuff----------------*/
+
+/*-----------game stuff---------------------*/
+h3 {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 100;
+align-self: center;
+}
+
+.form-container {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+max-width: 1000px;
+margin: auto;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 20px;
+}
+
+.form-group:last-of-type {
+margin-right: 0;
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+}
+
+input {
+display: block;
+margin: 0 auto;
+width: 250px;
+max-width: 100%;
+text-align: center;
+}
+
+.btn-container {
+margin-top: 20px;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.btn {
+font-size: 1.2em;
+padding: 10px 20px;
+background-color: #B9A3DA;
+}
+
+.btn-primary {
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+input, label {
+color: #333;
+}
+
+#gameTime, #gameDate, #gameLocation {
+background-color: #f1f1f1;
+border-color: #f1f1f1;
+color: #333; 
+}
+/* ----------game stuff--------------------------------*/
+/* -------------sched stuff -------------*/
+.wrapper {
+display: flex;
+flex-direction: column;
+}
+.box1 {
+margin-bottom: 30px;
+
+}
+
+main-sched {
+flex: 1 calc(100vh - 110px);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+
+.table-button {
+background-color: #B9A3DA;
+color: #333;
+border: none;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+margin-left: 10px;
+}
+
+tbody {
+background-color: white;
+}
+
+tr td:nth-child(even) {
+background-color: #AD98CD;
+}
+
+tr td:nth-child(odd) {
+background-color: #B9A3DA;
+}
+
+/*---------------sched stuff--------------------*/
+
+
+
+@media (max-height: 600px) {
+header {
+  display: none;
+}
+footer {
+  display: none;
+}
+main {
+  flex: 1 100vh;
+}
+.box1 { /* when screen is smaller, reduces margin gap between table and quote*/
+  margin-bottom: 10;
+}
+}
+
+@media screen and (max-width: 768px) {
+.form-container {
+  justify-content: space-around;
+}
+.form-group {
+  flex-basis: 45%;
+}
 }
